@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#results p {
+    margin: 10px 0;
+    font-family: monospace;
+    font-size: 2.5vh;
+}
+
+.error{
+    background: linear-gradient(rgba(215, 29, 29, 0.85), rgba(220, 33, 33, 0.91));
+    color:white;
+    display: inline;
+}

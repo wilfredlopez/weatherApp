@@ -37,7 +37,8 @@ app.get('*',(req,res)=>{
         title:'404 Page'
     })
 })
-const port = 4000
+
+const port = process.env.PORT || 4000
 app.listen(port,()=>{
     console.log(`Listening on ${port}`)
 })

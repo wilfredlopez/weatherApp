@@ -28,9 +28,10 @@ $(document).ready(function(){
                     return div.html(p1)
                 }
 
-                $(p1).text(data.weather[0].forecast)
+                $(p1).text(`${data.weather[0].forecast}. High: ${data.weather[0].temperatureHigh}, Low: ${data.weather[0].temperatureLow}`)
                 $(p2).text(data.weather[0].location)
-
+                
+           
                 $(p1).append(p2)
 
                 div.html(p1)

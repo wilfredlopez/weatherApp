@@ -33,7 +33,9 @@ module.exports = (req, res)=>{
                     location: location,
                     query: req.query.address,
                     longitude,
-                    latitude: latitud
+                    latitude: latitud,
+                    temperatureHigh:data.temperatureHigh,
+                    temperatureLow:data.temperatureLow
                 }]
             })
         })

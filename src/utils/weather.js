@@ -19,7 +19,9 @@ request({
         callback(undefined, {
             temperature: `${body.currently.temperature}`,
             apparent: `${body.currently.apparentTemperature}`,
-            forecast:`${body.daily.data[0].summary} It is currently ${body.currently.apparentTemperature} degress.  there is a ${body.currently.precipProbability}% chance of rain`
+            forecast:`${body.daily.data[0].summary} It is currently ${body.currently.apparentTemperature} degress.  there is a ${body.currently.precipProbability}% chance of rain`,
+            temperatureHigh: body.daily.data[0].temperatureHigh,
+            temperatureLow: body.daily.data[0].temperatureLow
 
         });
     }else{

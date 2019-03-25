@@ -1,13 +1,5 @@
 //client side javascripts
 
-//const url = 'http://puzzle.mead.io/puzzle'
-
-
-
-
-
-
-
 $(document).ready(function(){
     $('#weather-form').on('submit',(e)=>{
         e.preventDefault(); 
@@ -39,4 +31,27 @@ $(document).ready(function(){
             })
         })
     })
-})
+})//end doc. ready
+
+//Nav Toggle
+
+
+
+    $(window).on('load',function(){
+        page=window.location.pathname.split("/").pop();
+        console.log(page)
+
+        menuChildren = $('a[href="/' + page + '"]');  
+        $(menuChildren).parent('li').addClass('active');
+    })
+
+
+
+    // $('.nav-link').click(function(e){
+    //     const links = $('.nav-link')
+        
+    //     $(this).parent('li').toggleClass('active')
+    // })
+
+
+//Nav Toggle
